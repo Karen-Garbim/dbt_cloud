@@ -1,0 +1,15 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: default-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
+      user: dbt_user
+      password: 6959Ck1n@
+      port: 5439
+      dbname: dev
+      schema: public
+      threads: 6
+      sslmode: disable
+      retries: 3
+      is_serverless: True
