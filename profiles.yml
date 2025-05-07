@@ -9,7 +9,8 @@ default:
       port: 5439
       dbname: dev
       schema: public
-      threads: 6
-      sslmode: disable
+      threads: 4
+      sslmode: prefer
       retries: 3
       is_serverless: True
+      autocommit: True
