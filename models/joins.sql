@@ -44,4 +44,4 @@ with prod as (
     inner join ordrs ord on (od.order_id = ord.order_id)
 )
 
-select count(*) from finaljoin
+select * from finaljoin
