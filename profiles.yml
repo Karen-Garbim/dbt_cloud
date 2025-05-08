@@ -3,11 +3,25 @@ default:
   outputs:
     dev:
       type: redshift
-      host: default-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
+      host: dev-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
       user: dbt_user
       password: 6959Ck1n@
       port: 5439
       dbname: dev
+      schema: public
+      threads: 4
+      sslmode: prefer
+      retries: 3
+      is_serverless: True
+      autocommit: True
+
+    prod:
+      type: redshift
+      host: prod-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
+      user: dbt_user_prod
+      password: 6959Ck1n@
+      port: 5439
+      dbname: prod
       schema: public
       threads: 4
       sslmode: prefer
