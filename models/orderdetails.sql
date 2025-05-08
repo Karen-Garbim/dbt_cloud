@@ -5,7 +5,7 @@ od.unit_price,
 od.quantity,
 pr.product_name,
 pr.supplier_id,
-r.category_id, 
+pr.category_id, 
 (od.unit_price * od.quantity) total,
 (pr.unit_price * od.quantity) - total discount
 
