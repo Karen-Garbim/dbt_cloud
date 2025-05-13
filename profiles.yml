@@ -3,12 +3,12 @@ default:
   outputs:
     dev:
       type: redshift
-      host: dev-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
+      host: default-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
       user: dbt_user
       password: 6959Ck1n@
       port: 5439
       dbname: dev
-      schema: public
+      schema: dbt_kgarbim
       threads: 4
       sslmode: prefer
       retries: 3
@@ -17,12 +17,12 @@ default:
 
     prod:
       type: redshift
-      host: prod-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
-      user: dbt_user_prod
+      host: default-workgroup.992382363144.us-east-1.redshift-serverless.amazonaws.com
+      user: dbt_user
       password: 6959Ck1n@
       port: 5439
-      dbname: prod
-      schema: public
+      dbname: dev
+      schema: prod
       threads: 4
       sslmode: prefer
       retries: 3
